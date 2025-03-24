@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Jeans</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart - Jeans</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="cart-container">
+        <h2>Items in Your Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Skinny Fit Jeans</td>
+                    <td>$49.99</td>
+                    <td><input type="number" name="jeans_qty" value="1" min="1"></td>
+                    <td><input type="text" name="jeans_total" value="$49.99"></td>
+                </tr>
+                <tr>
+                    <td>Straight Jeans</td>
+                    <td>$44.99</td>
+                    <td><input type="number" name="straight_jeans_qty" value="1" min="1"></td>
+                    <td><input type="text" name="straight_jeans_total" value="$44.99"></td>
+                </tr>
+                <tr>
+                    <td>Ankle Jeans</td>
+                    <td>$34.99</td>
+                    <td><input type="number" name="ankle_jeans_qty" value="1" min="1"></td>
+                    <td><input type="text" name="ankle_jeans_total" value="$34.99"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Total Price: <input type="text" name="total_price" value="$129.97"></h2>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    </section>
+</body>
+</html>

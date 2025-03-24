@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Skirts</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart - Skirts</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="cart-container">
+        <h2>Items in Your Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flared Summer Skirt</td>
+                    <td>$34.99</td>
+                    <td><input type="number" name="skirt_qty" value="1" min="1"></td>
+                    <td><input type="text" name="skirt_total" value="$34.99"></td>
+                </tr>
+                <tr>
+                    <td>Classic Pencil Skirt</td>
+                    <td>$42.99</td>
+                    <td><input type="number" name="pencil_skirt_qty" value="1" min="1"></td>
+                    <td><input type="text" name="pencil_skirt_total" value="$42.99"></td>
+                </tr>
+                <tr>
+                    <td>Classic Denim Skirt</td>
+                    <td>$39.99</td>
+                    <td><input type="number" name="denim_skirt_qty" value="1" min="1"></td>
+                    <td><input type="text" name="denim_skirt_total" value="$39.99"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Total Price: <input type="text" name="total_price" value="$117.97"></h2>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    </section>
+</body>
+</html>
